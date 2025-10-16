@@ -56,7 +56,8 @@
         "test:debug": "mocha --inspect=9226 \"test/**/*.spec.js\"",
         "watch": "npm-run-all --parallel watch:dashboard watch:node-red",
         "watch:dashboard": "npm run dev",
-        "watch:node-red": "cd ~/.node-red && npx nodemon --watch $(realpath ./node_modules/@flowfuse/node-red-dashboard/nodes) --ext '*' --exec node-red"
+        "watch:node-red": "cd ~/.node-red && npx nodemon --watch $(realpath ./node_modules/@flowfuse/node-red-dashboard/nodes) --ext '*' --exec node-red",
+        "prepare": "npm run build"
     },
     "dependencies": {
         "acorn": "^8.14.1",
@@ -109,7 +110,7 @@
         "vite-plugin-pwa": "^1.0.0",
         "vitepress": "^1.0.2",
         "vue-router": "^4.5.0",
-        "vuetify": "^3.9.0",
+        "vuetify": "3.8.12",
         "vuex": "^4.1.0",
         "workbox-core": "^7.3.0",
         "workbox-precaching": "^7.3.0",
