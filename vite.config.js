@@ -47,8 +47,8 @@ export default defineConfig({
     build: {
         minify: process.env.NODE_ENV === 'development' ? false : undefined,
         outDir: '../dist',
-        emptyOutDir: true,
-        rollupOptions: {
+        emptyOutDir: true
+        /**rollupOptions: {
             output: {
                 manualChunks: {
                     // Create a separate chunk the following libraries to reduce .index.js size
@@ -57,7 +57,7 @@ export default defineConfig({
                     chartjs: ['chart.js']
                 }
             }
-        }
+        }**/
     },
     base: './'
 })
